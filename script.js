@@ -1,0 +1,1 @@
+const menu=document.querySelector(".menu"),nav=document.querySelector("nav");menu?.addEventListener("click",()=>{nav.classList.toggle("open");menu.textContent=nav.classList.contains("open")?"✕":"☰"});document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
